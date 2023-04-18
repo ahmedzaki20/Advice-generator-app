@@ -1,0 +1,113 @@
+/* Global rules */
+:root {
+  /* Colors */
+  /* Primary */
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  /* ### Neutral */
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  /* ## Typography */
+  /* ### Body Copy */
+
+  --Font-size: 28px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+input,
+img,
+button,
+span {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+button {
+  width: 100%;
+  border: none;
+  font: inherit;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--Font-siz);
+  color: var(--LightCyan);
+  background-color: var(--DarkBlue);
+}
+/* Main css */
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section .card {
+  width: 336px;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 20px;
+  position: relative;
+}
+
+section .card .advice-id {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--NeonGreen);
+  margin: 15px 0;
+}
+
+.advice-quto {
+  margin-bottom: 15px;
+}
+section .card .line-icon {
+  margin-bottom: 15px;
+}
+section .card .dice-icon {
+  background: var(--NeonGreen);
+  width: 40px;
+  margin: 0 auto -45px auto;
+  padding: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+}
+section .card .dice-icon:hover {
+  filter: saturate(2);
+  -webkit-filter: saturate(2);
+}
